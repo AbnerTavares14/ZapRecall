@@ -65,3 +65,241 @@ header h1{
     color: #FFFFFF;
     text-align: center
 }
+
+.carta-virada{
+    display:flex;
+    width: 182px;
+    height: 40px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.carta-virada p{
+    font-family: 'Recursive', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.4px;
+    color: #333333;
+}
+
+.carta-virada ion-icon{
+    font-size: 20px;
+}
+
+.pergunta{
+    position: relative;
+    width: 182px;
+    height: 80px;
+    background-color: #FFFFD4;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.pergunta h1{
+    font-family: 'Recursive', sans-serif;
+    color: #333333;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.4px;
+}
+
+.pergunta img{
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+}
+
+.resposta{
+    box-sizing: content-box;
+    position: relative;
+    width: 182px;
+    height: 80px;
+    background-color: #FFFFD4;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.memoria{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    display: flex;
+    width: 181px;
+}
+
+.nao-lembro{
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+    width: 65px;
+    height: 24px;
+    background-color: #FF3030;
+    border-radius: 5px;
+}
+
+.nao-lembro p{
+    font-family: 'Recursive', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+
+.quase-n-lembro{
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+    width: 65px;
+    height: 24px;
+    background-color: #FF922E;
+    border-radius: 5px;
+}
+
+.quase-n-lembro p{
+    font-family: 'Recursive', sans-serif;
+    font-size: 7px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.zap{
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+    width: 65px;
+    height: 24px;
+    background-color: #2FBE34;
+    border-radius: 5px;
+}
+
+.zap p{
+    font-family: 'Recursive', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+
+.carta-virada-errado{
+    display:flex;
+    width: 182px;
+    height: 40px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.carta-virada-errado p{
+    font-family: 'Recursive', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.4px;
+    color: #FF3030;
+    text-decoration: line-through;
+}
+
+.carta-virada-errado ion-icon{
+    font-size: 20px;
+    color: #FF3030;
+}
+
+.carta-virada-meio{
+    display:flex;
+    width: 182px;
+    height: 40px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.carta-virada-meio p{
+    font-family: 'Recursive', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.4px;
+    color: #FF922E;
+    text-decoration: line-through;
+}
+
+.carta-virada-meio ion-icon{
+    font-size: 20px;
+    color: #FF922E;
+}
+
+.carta-virada-zap{
+    display:flex;
+    width: 182px;
+    height: 40px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.carta-virada-zap p{
+    font-family: 'Recursive', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.4px;
+    color: #2FBE34;
+    text-decoration: line-through;
+}
+
+.carta-virada-zap ion-icon{
+    font-size: 20px;
+    color: #2FBE34;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #FFFFFF;
+}
+
+footer h1{
+    font-family: 'Recursive', sans-serif;
+    font-size: 12px;
+    color: #333333;
+    font-weight: 400;
+    text-align: center;
+}
+
+.icones{
+    display: flex;
+}
+
+.close-circle-sharp{
+    color: #FF3030;
+    font-size: 20px;
+}
