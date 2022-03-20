@@ -1,5 +1,7 @@
 import Pergunta from "./Pergunta"
 import { useState } from "react"
+import Footer from "./Footer";
+
 
 const perguntas = [
     { pergunta: "O que é JSX?", resposta: "Uma extensão de linguagem do JavaScript", id: "1" },
@@ -13,16 +15,20 @@ const perguntas = [
 ]
 
 export default function TelaDeck() {
+    function embaralhar() { 
+        return Math.random() - 0.5; 
+    }
+    perguntas.sort(embaralhar);
+
     const [qtd, setQtd] = useState(0);
     const icones = [];
     const [icone, setIcone] = useState(icones);
-    // const [respondido,setRespondido] = useState(false);
+    function NãoLembrei(icone){
+        return icone === "close-circle-sharp";
+    }
 
 
     function adicionaIcones(str) {
-        // icones.push(str);
-        // console.log(icones);
-        // console.log(icone);
         setIcone([...icone, str]);
     }
 
@@ -34,19 +40,12 @@ export default function TelaDeck() {
             </header>
             <main>
                 {
-                    perguntas.map(question =>
-                        <Pergunta key={question.id} pergunta={question.pergunta} resposta={question.resposta} id={question.id} adicionaIcones={adicionaIcones} callback={() => setQtd(qtd + 1)} />
+                    perguntas.map((question, index) =>
+                        <Pergunta key={index} pergunta={question.pergunta} resposta={question.resposta} id={index+1} adicionaIcones={adicionaIcones} callback={() => setQtd(qtd + 1)} />
                     )
                 }
             </main>
-            <footer>
-                <h1>{qtd}/8 CONCLUÍDOS</h1>
-                <div className="icones">
-                    {icone.map((icon, index) =>
-                        <ion-icon className={`${icon}` } key={icon + index} name={icon}></ion-icon>
-                    )}
-                </div>
-            </footer>
+            <Footer icone={icone} qtd={qtd} callback={NãoLembrei}/>
         </>
     )
 }
