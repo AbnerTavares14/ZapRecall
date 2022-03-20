@@ -1,7 +1,7 @@
 export default function FooterFinalTriste(props){
     const { icone } = props;
     return (
-        <footer>
+        <footer className="final">
             <div className="fim">
                 <img src="sad.png" alt="" />
                 <h1>PUTZ!</h1>
