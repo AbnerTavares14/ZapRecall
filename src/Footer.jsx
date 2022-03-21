@@ -2,7 +2,7 @@ import FooterFinalFeliz from "./FooterFinalFeliz";
 import FooterFinalTriste from "./FooterFinalTriste";
 
 export default function Footer(props){
-    const {qtd,icone,callback} = props;
+    const {qtd,icone,callback, reinicio} = props;
     if(qtd < 8){
         return (
             <footer>
@@ -17,11 +17,11 @@ export default function Footer(props){
     }else{
         if(icone.find(callback) !== undefined){
             return(
-                <FooterFinalTriste icone={icone}/>
+                <FooterFinalTriste reinicio={reinicio} icone={icone}/>
             )
         }else{
             return(
-                <FooterFinalFeliz icone={icone}/>
+                <FooterFinalFeliz reinicio={reinicio} icone={icone}/>
             )
         }
     }

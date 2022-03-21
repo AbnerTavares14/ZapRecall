@@ -1,6 +1,7 @@
 import Pergunta from "./Pergunta"
 import { useState } from "react"
 import Footer from "./Footer";
+import TelaInicial from "./TelaInicial";
 
 
 const deck1 = [
@@ -49,6 +50,7 @@ export default function TelaDeck(props) {
     const [qtd, setQtd] = useState(0);
     const icones = [];
     const [icone, setIcone] = useState(icones);
+    const [reinicio, setReinicio] = useState(false);
     function NãoLembrei(icone){
         return icone === "close-circle-sharp";
     }
@@ -64,7 +66,7 @@ export default function TelaDeck(props) {
     function adicionaIcones(str) {
         setIcone([...icone, str]);
     }
-
+    if(reinicio === false){
     return (
         <>
             <header>
@@ -78,7 +80,12 @@ export default function TelaDeck(props) {
                     )
                 }
             </main>
-            <Footer icone={icone} qtd={qtd} callback={NãoLembrei}/>
+            <Footer icone={icone} qtd={qtd} callback={NãoLembrei} reinicio={() => setReinicio(true)}/>
         </>
     )
+    }else{
+        return(
+            <TelaInicial />
+        )
+    }
 }

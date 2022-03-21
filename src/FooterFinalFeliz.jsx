@@ -1,7 +1,7 @@
 
 
 export default function FooterFinalFeliz(props){
-    const { icone } = props;
+    const { icone, reinicio } = props;
 
     return (
         <footer className="final">
@@ -15,6 +15,7 @@ export default function FooterFinalFeliz(props){
                     <ion-icon className={`${icon}`} key={icon + index} name={icon}></ion-icon>
                 )}
             </div>
+            <button className="reiniciar" onClick={reinicio}>Reiniciar Recall</button>
         </footer>
     )
 }
