@@ -331,7 +331,8 @@ ion-icon[name="checkmark-circle-sharp"]{
 
 .fim{
     display: flex;
-    margin-bottom: 14px;
+    margin-bottom: 5px;
+    margin-top: 15px;
 }
 
 .fim img{
@@ -352,7 +353,7 @@ ion-icon[name="checkmark-circle-sharp"]{
     font-size: 12px;
     text-align: center;
     color: #333333;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 
 .final{
@@ -365,4 +366,22 @@ ion-icon[name="checkmark-circle-sharp"]{
     align-items: center;
     height: 112px;
     background-color: #FFFFFF;
+}
+
+.reiniciar{
+    width: 167px;
+    height: 32px;
+    background-color: #FB6B6B;
+    border: 0 none;
+    outline: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding-top: 5px;
+}
+
+.reiniciar p{
+    font-family: 'Recursive', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
 }

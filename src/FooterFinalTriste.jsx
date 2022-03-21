@@ -13,7 +13,7 @@ export default function FooterFinalTriste(props){
                     <ion-icon className={`${icon}`} key={icon + index} name={icon} ></ion-icon>
                 )}
             </div>
-            <button className="reiniciar" onClick={reinicio}>Reiniciar Recall</button>
+            <button className="reiniciar" onClick={reinicio}><p>REINICIAR RECALL</p></button>
         </footer>
     )
 }
