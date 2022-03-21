@@ -10,7 +10,7 @@ export default function FooterFinalTriste(props){
                 Mas não desanime!</p>
             <div className="icones">
                 {icone.map((icon, index) =>
-                    <ion-icon className={`${icon}`} key={icon + index} name={icon}></ion-icon>
+                    <ion-icon className={`${icon}`} key={icon + index} name={icon} ></ion-icon>
                 )}
             </div>
         </footer>

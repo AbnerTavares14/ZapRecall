@@ -9,7 +9,7 @@ export default function Footer(props){
                 <h1>{qtd}/8 CONCLUÍDOS</h1>
                 <div className="icones">
                     {icone.map((icon, index) =>
-                        <ion-icon className={`${icon}`} key={icon + index} name={icon}></ion-icon>
+                        <ion-icon className={icon} key={icon + index} name={icon} ></ion-icon>
                     )}
                 </div>
             </footer>
